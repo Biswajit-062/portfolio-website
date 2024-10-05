@@ -62,12 +62,14 @@
             </div>
 
             
-            <form class="contact-form">
+       
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
                 <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
+                    <input type="hidden" name="access_key" value="aa3107c4-af11-4830-a0fa-e2a60802caef">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
                 </div>
-                <textarea placeholder="Your Message" required></textarea>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
